@@ -1,4 +1,4 @@
-import DoughnutChart from '../DoughnutChart'
+import DoughnutChart from './DoughnutChart'
 import AnimatedCounter from './AnimatedCounter'
 
 const TotalBalanceBox = ({
@@ -27,6 +27,7 @@ const TotalBalanceBox = ({
                 </div>
             </div>
         </section>
+        
     )
 }
 
