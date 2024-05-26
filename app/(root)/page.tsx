@@ -4,7 +4,7 @@ import RightSidebar from '../../components/ui/RightSidebar'
 import React from 'react'
 
 const Home = () => {
-  const loggedIn = { firstName: 'Dude' }
+  const loggedIn = { firstName: 'Dude', lastName: 'Awesome', email: 'awesomedude.gmail.com' }
   return (
     <section className='home'>
       <div className='home-content'>
@@ -27,7 +27,10 @@ const Home = () => {
       <RightSidebar
         user={loggedIn}
         transactions={[]}
-        banks={[]} />
+        banks={[
+          { currentBalance: 123.50 },
+          { currentBalance: 500.50 },
+        ]} />
     </section>
   )
 }
